@@ -48,7 +48,8 @@ h3 {
         height: 42em;
     }
     .regFormSection h3 {
-        font-size: 24px;
+        font-size: 22px;
+        text-align: center;
     }
     .regFormSection input {
         width: 70%;
@@ -58,7 +59,7 @@ h3 {
         background-color: slateblue;
         width: 100%;
         color: snow;
-        font-size: 24px;
+        font-size: 16px;
         margin-left: 30px;
     }
     .regImageSection, .regFormSection {
