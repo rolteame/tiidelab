@@ -1,6 +1,6 @@
 let processForm = (event) => {
     event.preventDefault();
-    document.querySelector('form').reset();
+    
 
     let fullName = document.getElementById('fullName').value;
     let email = document.getElementById('email').value;
@@ -13,6 +13,7 @@ let processForm = (event) => {
     if(password != cpassword) {
         alert('password mismatch')
     }else {
+        let formData = [];
         let data = {
             "fullName": fullName,
             "email": email,
@@ -21,16 +22,19 @@ let processForm = (event) => {
             "isEnabled": true,
             "roles":["user"]
         }
-        let formJSON = localStorage.setItem('myFoodSchedule', JSON.stringify(data));
-        fetch('https://5f06f3689c5c250016306640.mockapi.io/register', {
+        formData.push(data);
+        console.log(formData);
+        
+        fetch('https://9118ebfa81ae62463a979447da5581f8.m.pipedream.net', {
             method: 'POST',
-            body: JSON.stringify(data),
+            body: JSON.stringify(formData),
             header: {
                 'Content-Type':'application/json'
             }
         }).then((data) => {
             alert('Congrats');
         });
+        document.querySelector('form').reset();
     }
 }
 
