@@ -1,0 +1,53 @@
+body {
+    background-color: mediumpurple;
+    
+}
+.regSection {
+    background-color: mistyrose;
+    height: 24em;
+    width: 70%;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 100px auto;
+}
+.regImageSection {
+    width: 50%;
+    float: left;
+}
+.regImage {
+    max-width: 100%;
+}
+.regFormSection {
+    width: 50%;
+    float: left;
+}
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 20px;
+    border-radius: 10px;
+}
+.submit {
+    background-color: slateblue;
+    width: 85%;
+    color: snow;
+    font-size: 24px;
+}
+input:focus {
+    background-color: salmon;
+    color: seashell;
+    outline: none;
+}
+h3 {
+    color: slateblue;
+    margin: 15px;
+    font-size: 32px;
+}
+@media screen and (max-width: 800px) {
+    .regSection {
+        height: 42em;
+    }
+    .regImageSection, .regFormSection {
+        width: 100%;
+    }
+}
