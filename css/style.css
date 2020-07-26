@@ -62,6 +62,9 @@ h3 {
         font-size: 16px;
         margin-left: 30px;
     }
+    form {
+        display: inline-block;
+    }
     .regImageSection, .regFormSection {
         width: 100%;
     }
