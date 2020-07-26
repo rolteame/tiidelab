@@ -34,7 +34,7 @@ let processForm = (event) => {
         }).then((data) => {
             alert('Congrats');
         });
-        document.querySelector('form').reset();
+        
     }
 }
 
