@@ -1,5 +1,5 @@
 let processForm = (event) => {
-    event.preventDefault();
+    //event.preventDefault();
     
 
     let fullName = document.getElementById('fullName').value;
@@ -34,7 +34,7 @@ let processForm = (event) => {
         }).then((data) => {
             alert('Congrats');
         });
-        
+        document.queryselector('form').reset();
     }
 }
 
