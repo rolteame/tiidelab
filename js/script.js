@@ -34,7 +34,11 @@ let processForm = (event) => {
         }).then((data) => {
             alert('Congrats');
         });
+<<<<<<< HEAD
         document.querySelector('form').reset();
+=======
+        document.queryselector('form').reset();
+>>>>>>> 4eeceb05fe85f4fd08ce8c3e7734debd49904ffb
     }
 }
 
