@@ -1,5 +1,5 @@
 let processForm = (event) => {
-    //event.preventDefault();
+    event.preventDefault();
     
 
     let fullName = document.getElementById('fullName').value;
