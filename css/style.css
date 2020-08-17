@@ -21,6 +21,7 @@ body {
     width: 50%;
     float: left;
 }
+
 input {
     width: 80%;
     padding: 10px;
@@ -45,22 +46,26 @@ h3 {
 }
 @media screen and (max-width: 800px) {
     .regSection {
-        height: 42em;
+        height: 35em;
     }
-    .regFormSection h3 {
+    h3 {
         font-size: 24px;
     }
-    .regFormSection input {
+    input {
         width: 70%;
+        padding: 10px;
         text-align: center;
         margin-left: 30px;
     }
     .submit {
         background-color: slateblue;
-        width: 100%;
+        width: 80%!important;
         color: snow;
         font-size: 24px;
         margin-left: 30px;
+    }
+    form {
+        margin-right: 1em;
     }
     .regImageSection, .regFormSection {
         width: 100%;
